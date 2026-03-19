@@ -44,7 +44,7 @@ final class EmptyMailerTest extends TestCase
      *
      * @return array
      */
-    public function provideEmptyMailerValues()
+    public static function provideEmptyMailerValues()
     {
         return [
             'empty string' => [''],
