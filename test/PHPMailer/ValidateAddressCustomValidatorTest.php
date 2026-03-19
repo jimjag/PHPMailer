@@ -96,7 +96,7 @@ final class ValidateAddressCustomValidatorTest extends TestCase
      *
      * @return array
      */
-    public function dataRejectCallables()
+    public static function dataRejectCallables()
     {
         return [
             // If a `php` function defined in validators.php successfully overrides this built-in validator name,
