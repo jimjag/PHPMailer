@@ -22,27 +22,33 @@ use PHPMailer\Test\TestCase;
  */
 final class EmptyMailerTest extends TestCase
 {
-    public function testSendWithEmptyMailerDoesNotCrash()
+    /**
+     * @dataProvider provideEmptyMailerValues
+     *
+     * @param mixed $mailer
+     */
+    public function testSendWithEmptyMailerDoesNotCrash($mailer)
     {
         $this->Mail->setFrom('from@example.com', 'First Last');
         $this->Mail->addAddress('whoto@example.com', 'John Doe');
         $this->Mail->Subject = 'test';
         $this->Mail->Body = 'Test';
 
-        $this->Mail->Mailer = '';
+        $this->Mail->Mailer = $mailer;
 
         self::assertTrue($this->Mail->send(), $this->Mail->ErrorInfo);
     }
 
-    public function testSendWithNullMailerDoesNotCrash()
+    /**
+     * Data provider for empty Mailer values.
+     *
+     * @return array
+     */
+    public function provideEmptyMailerValues()
     {
-        $this->Mail->setFrom('from@example.com', 'First Last');
-        $this->Mail->addAddress('whoto@example.com', 'John Doe');
-        $this->Mail->Subject = 'test';
-        $this->Mail->Body = 'Test';
-
-        $this->Mail->Mailer = null;
-
-        self::assertTrue($this->Mail->send(), $this->Mail->ErrorInfo);
+        return [
+            'empty string' => [''],
+            'null' => [null],
+        ];
     }
 }
