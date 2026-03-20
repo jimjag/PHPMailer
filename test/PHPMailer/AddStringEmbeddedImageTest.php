@@ -146,7 +146,7 @@ final class AddStringEmbeddedImageTest extends PreSendTestCase
      *
      * @return array
      */
-    public function dataFailToAttach()
+    public static function dataFailToAttach()
     {
         return [
             'Invalid: invalid encoding' => [
