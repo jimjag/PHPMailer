@@ -491,11 +491,11 @@ final class LocalizationTest extends TestCase
                'expected' => 'SMTP Connect() falló. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting',
                'langCode' => 'es',
             ],
-            'Non-existent key returns key, default language (en)' => [
+            'Nonexistent key returns key, default language (en)' => [
                'input'    => 'notasupportedkey',
                'expected' => 'notasupportedkey',
             ],
-            'Non-existent key returns key, explicit language: es' => [
+            'Nonexistent key returns key, explicit language: es' => [
                'input'    => 'notasupportedkey',
                'expected' => 'notasupportedkey',
                'langCode' => 'es',
