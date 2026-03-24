@@ -177,7 +177,7 @@ final class DSNConfiguratorTest extends TestCase
         $this->expectException(Exception::class);
         $this->expectExceptionMessage('Unknown option: "UnknownOption".');
 
-        $configurator->configure($this->Mail, 'mail://locahost?UnknownOption=Value');
+        $configurator->configure($this->Mail, 'mail://localhost?UnknownOption=Value');
     }
 
     /**
