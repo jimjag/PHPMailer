@@ -253,7 +253,7 @@ final class LocalizationTest extends TestCase
              * Note: The first two letters of this three letter language code should match an existing
              * language file for this test to test this properly.
              */
-            'Invalid language code (ISO 639-2 "hrv"): fallback to default (en)' => [
+            'Invalid language code (ISO 639-2 "hrv"): fall back to default (en)' => [
                 'phrase'   => 'Message body empty',
                 'langCode' => 'hrv',
             ],
