@@ -159,7 +159,7 @@ class PHPMailer
     public $Ical = '';
 
     /**
-     * Value-array of "method" in Contenttype header "text/calendar"
+     * Value-array of "method" in Content-type header "text/calendar"
      *
      * @var string[]
      */
