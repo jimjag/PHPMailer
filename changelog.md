@@ -306,7 +306,7 @@ Many thanks to @jrfnl for all her work.
 ## Version 6.0.6 (November 14th 2018)
 * **SECURITY** Fix potential object injection vulnerability. Reported by Sehun Oh of cyberone.kr.
 * Added Tagalog translation, thanks to @StoneArtz
-* Added Malagache translation, thanks to @Hackinet
+* Added Malagasy translation, thanks to @Hackinet
 * Updated Serbian translation, fixed incorrect language code, thanks to @mmilanovic4
 * Updated Arabic translations (@MicroDroid)
 * Updated Hungarian translations
