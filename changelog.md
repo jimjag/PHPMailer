@@ -298,7 +298,7 @@ Many thanks to @jrfnl for all her work.
 * Add PHPMailer logo images
 
 ## Version 6.0.7 (February 1st 2019)
-* Include RedHat GPL Cooperation Commitment - see the `COMMITMENT` file for details.
+* Include Red Hat GPL Cooperation Commitment - see the `COMMITMENT` file for details.
 * Don't exclude composer.json from git exports as it breaks composer updates in projects that use PHPMailer
 * Updated Malay translation
 * Fix language tests
