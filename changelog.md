@@ -191,7 +191,7 @@ Many thanks to @jrfnl for all her work.
 
 ## Version 6.4.0 (March 31st, 2021)
 * Revert change that made the `mail()` and sendmail transports set the envelope sender if one isn't explicitly provided, as it causes problems described in <https://github.com/PHPMailer/PHPMailer/issues/2298>
-* Check for mbstring extension before decoding addresss in `parseAddress`
+* Check for mbstring extension before decoding address in `parseAddress`
 * Add Serbian Latin translation (`sr_latn`)
 * Enrol PHPMailer in Tidelift
 
