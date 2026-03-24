@@ -761,7 +761,7 @@ This is a major update that breaks backwards compatibility.
 
 ## Version 5.1 (October 20, 2009)
 * fixed filename issue with AddStringAttachment (thanks to Tony)
-* fixed "SingleTo" property, now works with Senmail, Qmail, and SMTP in
+* fixed "SingleTo" property, now works with Sendmail, Qmail, and SMTP in
   addition to PHP mail()
 * added DKIM digital signing functionality, new properties:
   - DKIM_domain (sets the domain name)
