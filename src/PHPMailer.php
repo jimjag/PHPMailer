@@ -1911,7 +1911,7 @@ class PHPMailer
 
         // CVE-2016-10033, CVE-2016-10045: Don't pass -f if characters will be escaped.
         // Also don't add the -f automatically unless it has been set either via Sender
-        // or sendmail_path. Otherwise it can introduce new problems.
+        // or sendmail_path. Otherwise, it can introduce new problems.
         // @see http://github.com/PHPMailer/PHPMailer/issues/2298
         if (!empty($this->Sender) && static::validateAddress($this->Sender) && self::isShellSafe($this->Sender)) {
             $sendmailArgs[] = '-f' . $this->Sender;
