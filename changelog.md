@@ -223,7 +223,7 @@ Many thanks to @jrfnl for all her work.
 * Prevent duplicate `To` headers in BCC-only messages when using `mail()`
 * Avoid file function problems when attaching files from Windows UNC paths
 * Improve German, Bahasa Indonesian, Filipino translations
-* Add Javascript-based example
+* Add JavaScript-based example
 * Increased test coverage
 
 ## Version 6.1.7 (July 14th, 2020)
